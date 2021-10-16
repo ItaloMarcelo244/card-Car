@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-weight: 400,700;
+}
+
+h1{
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+h1{
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.item,p{
+  line-height: 20px;
+  color:#fff4e2;
+  padding: 10px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+
+/*Container*/
+.container{
+  display: flex;
+  flex-direction:column;
+  align-content: flex-start;
+  flex-wrap: nowrap;
+  margin: 75px;
+}
+
+/*Card - Card-itens*/
+.largura{
+  width: 312px;
+  height: 500px;
+}
+
+.Card-colorOG{
+  background-color:  hsl(31, 77%, 52%);
+  border-radius: 10px 10px 0 0;
+
+}
+
+.Card-colorBL{
+  background-color: hsl(184, 100%, 22%);
+}  
+
+.Card-colorDB{
+  background-color:  hsl(179, 100%, 13%);
+  border-radius:0 0 10px 10px;
+}
+img{
+  margin: 50px 40px 20px 40px;
+  position: relative;
+  top: 15px;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+}
+
+.item{
+  flex: 0 auto;
+  flex-direction: column;
+  max-width: 231px;
+  padding: 15px;
+}
+
+
+button{
+  border-radius: 50px;
+  background-color: transparent;
+  border: solid 1px white;
+  padding: 10px 20px 10px 20px;
+  font-size: 15px; 
+  color: #fff;
+  margin: 20px 20px 30px 30px;
+  cursor: pointer;
+}
+
+button{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 25px;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  
+}
+
+button:hover{
+  background-color: white;
+}
+.letra{
+  color: #fff;
+  
+}
+
+.letra1:hover{
+  color:  hsl(31, 77%, 52%);
+  font-weight: bold;
+}
+
+.letra2:hover{
+ color:  hsl(184, 100%, 22%);
+ font-weight: bold;
+}
+
+.letra3:hover{
+  color: hsl(179, 100%, 13%);
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1050px) {
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 55px;
+  }
+   
+  .Card-colorOG{
+    background-color:  hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+  
+  }
+  
+  .Card-colorBL{
+    background-color: hsl(184, 100%, 22%);
+  }  
+  
+  .Card-colorDB{
+    background-color:  hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+  }
+  
+
+  .item{
+    flex: 0 auto;
+    flex-direction: column;
+    max-width: 220px;
+  }
+}
